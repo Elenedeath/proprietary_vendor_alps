@@ -64,7 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/alps/8227l_demo/proprietary/etc/custom.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/custom.conf \
     vendor/alps/8227l_demo/proprietary/etc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
     vendor/alps/8227l_demo/proprietary/etc/mtklog-config.prop:$(TARGET_COPY_OUT_SYSTEM)/etc/mtklog-config.prop \
-
     vendor/alps/8227l_demo/proprietary/lib/hw/android.hidl.memory@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/android.hidl.memory@1.0-impl.so \
     vendor/alps/8227l_demo/proprietary/lib/hw/audio.a2dp.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/audio.a2dp.default.so \
     vendor/alps/8227l_demo/proprietary/lib/hw/bluetooth.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/bluetooth.default.so \
