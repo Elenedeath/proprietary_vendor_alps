@@ -1,5 +1,0 @@
-service xycpdata /system/bin/xyautocpnavi  ${vendor.xy.cpdata.command}
-    disabled  
-    oneshot 
-on property:vendor.xy.cpdata.command=*
-    start xycpdata

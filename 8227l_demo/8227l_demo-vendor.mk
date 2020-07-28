@@ -58,8 +58,6 @@ PRODUCT_COPY_FILES += \
     vendor/alps/8227l_demo/proprietary/etc/bluetooth/bt_stack.conf:/system/etc/bluetooth/bt_stack.conf \
     vendor/alps/8227l_demo/proprietary/etc/bluetooth/mtk_bt_fw.conf:/system/etc/bluetooth/mtk_bt_fw.conf \
     vendor/alps/8227l_demo/proprietary/etc/bluetooth/mtk_bt_stack.conf:/system/etc/bluetooth/mtk_bt_stack.conf \
-    vendor/alps/8227l_demo/proprietary/etc/init/xycpdata.rc:/system/etc/init/xycpdata.rc \
-    vendor/alps/8227l_demo/proprietary/etc/init/xyremfile.rc:/system/etc/init/xyremfile.rc \
     vendor/alps/8227l_demo/proprietary/etc/clatd.conf:/system/etc/clatd.conf \
     vendor/alps/8227l_demo/proprietary/etc/custom.conf:/system/etc/custom.conf \
     vendor/alps/8227l_demo/proprietary/etc/factory.ini:/system/etc/factory.ini \
