@@ -1,0 +1,5 @@
+service xyrmfile system/bin/xyrminsidefiles  ${vendor.xy.rmfile.command}
+    disabled  
+    oneshot 
+on property:vendor.xy.rmfile.command=*
+    start xyrmfile
