@@ -1,3 +1,18 @@
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# The gps config appropriate for this device
+$(call inherit-product, device/common/gps/gps_us_supl.mk)
+
+$(call inherit-product-if-exists, vendor/alps/8227l_demo/8227l_demo-vendor.mk)
+
+DEVICE_PACKAGE_OVERLAYS += device/alps/8227l_demo/overlay
+
+$(call inherit-product, build/target/product/full.mk)
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+PRODUCT_NAME := 8227l_demo
+PRODUCT_DEVICE := 8227l_demo
+
 PRODUCT_COPY_FILES += \
     vendor/alps/8227l_demo/proprietary/vendor/data/misc/ProjectConfig.mk:$(TARGET_COPY_OUT_VENDOR)/data/misc/ProjectConfig.mk \
     vendor/alps/8227l_demo/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
