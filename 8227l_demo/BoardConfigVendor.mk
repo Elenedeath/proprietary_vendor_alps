@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/alps/8227L_demo/BoardConfigVendor.mk
+-include vendor/alps/8227l_demo/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -13,7 +13,7 @@ TARGET_CPU_VARIANT := cortex-a7
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := 8227L_demo
+TARGET_BOOTLOADER_BOARD_NAME := 8227l_demo
 
 BOARD_KERNEL_CMDLINE := buildvariant=user
 BOARD_KERNEL_BASE := 0x0x80000000
@@ -26,6 +26,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/alps/8227L_demo/kernel
+TARGET_PREBUILT_KERNEL := device/alps/8227l_demo/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
