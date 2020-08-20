@@ -1,0 +1,34 @@
+#!/vendor/bin/sh
+
+ate=`getprop "persist.atc.ate"`
+mcu=`getprop "persist.atc.mcu.qb"`
+qboff=`getprop "runtime.atc.mcu.qb.off"`
+
+#2020 0525 
+
+    echo "mode 72 4" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "mode 73 4" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "mode 74 4" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    
+if [ "###1" = "###$ate" ]; then
+
+    # use SPI_CS pin
+    echo "mode 53 0" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "dir 53 1" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "out 53 1" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+
+elif [ "###1" = "###$mcu" ]; then
+if [ "###1" = "###$qboff" ]; then
+    # use SPI_CS pin
+    echo "mode 53 0" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "dir 53 1" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "out 53 1" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+
+elif [ "###0" = "###$qboff" ]; then
+
+    # use SPI_CS pin
+    echo "mode 53 0" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "dir 53 1" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+    echo "out 53 0" > /sys/devices/soc/1000b000.pinctrl/mt_gpio
+fi
+fi

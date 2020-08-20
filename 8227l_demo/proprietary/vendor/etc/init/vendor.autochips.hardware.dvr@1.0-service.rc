@@ -1,0 +1,4 @@
+service dvr_daemon /vendor/bin/hw/vendor.autochips.hardware.dvr@1.0-service
+	class hal
+	user system
+	group system

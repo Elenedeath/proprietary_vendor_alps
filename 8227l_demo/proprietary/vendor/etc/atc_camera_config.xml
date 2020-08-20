@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CameraConfig>
+	<Provider>
+		<CameraMipiYuv>
+			<CameraId>2</CameraId>
+			<Facing>BACK</Facing>
+			<Rotate>0</Rotate>
+			<Enable>FALSE</Enable>
+		</CameraMipiYuv>
+
+		<CameraCVBS>
+			<CameraId>3</CameraId>
+			<Facing>BACK</Facing>
+			<Rotate>0</Rotate>
+			<Enable>FALSE</Enable>
+		</CameraCVBS>
+
+		<CameraColorBar>
+			<CameraId>4</CameraId>
+			<Facing>FRONT</Facing>
+			<Rotate>0</Rotate>
+			<Enable>FALSE</Enable>
+		</CameraColorBar>
+
+		<CameraUSB>
+			<CameraId>5</CameraId>
+			<Facing>BACK</Facing>
+			<Rotate>0</Rotate>
+			<Enable>TRUE</Enable>
+		</CameraUSB>
+
+		<CameraV4L2Yuv>
+			<CameraId>6</CameraId>
+			<Facing>BACK</Facing>
+			<Rotate>0</Rotate>
+			<Enable>FALSE</Enable>
+		</CameraV4L2Yuv>
+	</Provider>
+</CameraConfig>

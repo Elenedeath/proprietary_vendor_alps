@@ -1,0 +1,7 @@
+service camhal3lite /vendor/bin/hw/camhal3lite
+    class main
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system media graphics
+    ioprio rt 4
+    capabilities SYS_NICE
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/top-app/tasks
